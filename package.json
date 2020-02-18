@@ -1,5 +1,7 @@
 {
   "private": true,
+  "main": "packages/styled-system/dist/index.js",
+  "module": "packages/styled-system/dist/index.esm.js",
   "workspaces": [
     "packages/*",
     "examples/*",
