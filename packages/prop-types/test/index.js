@@ -12,8 +12,8 @@ import {
   shadow,
   buttonStyle,
   textStyle,
-  colorStyle
-} from 'styled-system'
+  colorStyle,
+} from 'tmp-styled-system'
 
 test('includes prop types for all space prop names', () => {
   const types = Object.keys(propTypes.space)

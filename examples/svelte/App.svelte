@@ -1,6 +1,6 @@
 <script>
   import { css } from 'emotion'
-  import system from '@styled-system/css'
+  import system from '@tmp-styled-system/css'
   import theme from './theme.js'
 
   const styles = {

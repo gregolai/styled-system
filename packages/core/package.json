@@ -1,5 +1,5 @@
 {
-  "name": "@styled-system/core",
+  "name": "@tmp-styled-system/core",
   "version": "5.1.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

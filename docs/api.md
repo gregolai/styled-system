@@ -5,7 +5,7 @@ export const toc = true
 ## Space
 
 ```js
-import { space } from 'styled-system'
+import { space } from 'tmp-styled-system'
 ```
 
 The space utility converts shorthand margin and padding props to margin and padding CSS declarations.
@@ -59,7 +59,7 @@ As of v4.0.0, verbose margin and padding props (e.g. `margin`, `marginTop`) can 
 ## Color
 
 ```js
-import { color } from 'styled-system'
+import { color } from 'tmp-styled-system'
 ```
 
 The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -88,7 +88,7 @@ Color palettes can be configured with the [ThemeProvider][theming] to use keys a
 ## Typography
 
 ```js
-import { typography } from 'styled-system'
+import { typography } from 'tmp-styled-system'
 ```
 
 Typography props include `fontFamily`, `fontSize`, `fontWeight`, `lineHeight`, `letterSpacing`, `textAlign`, and `fontStyle`.
@@ -127,7 +127,7 @@ Typography props include `fontFamily`, `fontSize`, `fontWeight`, `lineHeight`, `
 ## Layout
 
 ```js
-import { layout } from 'styled-system'
+import { layout } from 'tmp-styled-system'
 ```
 
 The layout utility includes style props for `width`, `height`, `display`, `minWidth`, `minHeight`, `maxWidth`, `maxHeight`, `size`, `verticalAlign`, `overflow`, `overflowX`, and `overflowY`.
@@ -199,7 +199,7 @@ The `width` prop is transformed based on the following:
 ## Flexbox
 
 ```js
-import { flexbox } from 'styled-system'
+import { flexbox } from 'tmp-styled-system'
 ```
 
 The `flexbox` utility includes style props for `alignItems`, `alignContent`, `justifyItems`, `justifyContent`, `flexWrap`, `flexDirection`, `flex`, `flexGrow`, `flexShrink`, `flexBasis`, `justifySelf`, `alignSelf`, and `order`.
@@ -239,7 +239,7 @@ The `flexbox` utility includes style props for `alignItems`, `alignContent`, `ju
 ## Grid Layout
 
 ```js
-import { grid } from 'styled-system'
+import { grid } from 'tmp-styled-system'
 ```
 
 The `grid` utility includes style props for `gridGap`, `gridColumnGap`, `gridRowGap`, `gridColumn`, `gridRow`, `gridAutoFlow`, `gridAutoColumns`, `gridAutoRows`, `gridTemplateColumns`, `gridTemplateRows`, `gridTemplateAreas`, and `gridArea`.
@@ -288,7 +288,7 @@ The `grid` utility includes style props for `gridGap`, `gridColumnGap`, `gridRow
 ## Background
 
 ```js
-import { background } from 'styled-system'
+import { background } from 'tmp-styled-system'
 ```
 
 The `background` utility includes style props for `backgroundImage`, `backgroundSize`, `backgroundPosition`, and `backgroundRepeat`.
@@ -306,7 +306,7 @@ The `background` utility includes style props for `backgroundImage`, `background
 ## Border
 
 ```js
-import { border } from 'styled-system'
+import { border } from 'tmp-styled-system'
 ```
 
 The `border` utility includes style props for `border`, `borderWidth`, `borderStyle`, `borderColor`, `borderRadius`, `borderTop`, `borderTopWidth`, `borderTopStyle`, `borderTopColor`, `borderTopLeftRadius`, `borderTopRightRadius`, `borderRight`, `borderRightWidth`, `borderRightStyle`, `borderRightColor`, `borderBottom`, `borderBottomWidth`, `borderBottomStyle`, `borderBottomColor`, `borderBottomLeftRadius`, `borderBottomRightRadius`, `borderLeft`, `borderLeftWidth`, `borderLeftStyle`, `borderLeftColor`, `borderX`, and `borderY`.
@@ -334,7 +334,7 @@ The `border` utility includes style props for `border`, `borderWidth`, `borderSt
 ## Position
 
 ```js
-import { position } from 'styled-system'
+import { position } from 'tmp-styled-system'
 ```
 
 The `position` utility includes style props for `position`, `zIndex`, `top`, `right`, `bottom`, and `left`.
@@ -358,7 +358,7 @@ The `position` utility includes style props for `position`, `zIndex`, `top`, `ri
 ## Shadow
 
 ```js
-import { shadow } from 'styled-system'
+import { shadow } from 'tmp-styled-system'
 ```
 
 The `shadow` utility includes style props for `textShadow` and `boxShadow`.
@@ -376,15 +376,9 @@ This utility can help improve performance when using multiple style props functi
 
 ```js
 import styled from 'styled-components'
-import { compose, typography, space, color } from 'styled-system'
+import { compose, typography, space, color } from 'tmp-styled-system'
 
-export const Text = styled('div')(
-  compose(
-    typography,
-    space,
-    color
-  )
-)
+export const Text = styled('div')(compose(typography, space, color))
 ```
 
 <!--
@@ -406,7 +400,7 @@ literal should look like this:
 
 ```js
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from '@tmp-styled-system/theme-get'
 
 const Box = styled.div`
   border-radius: ${themeGet('radii.small', '4px')};
@@ -418,7 +412,7 @@ function call and have `props` passed to it:
 
 ```js
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from '@tmp-styled-system/theme-get'
 
 const Box = styled('div')(props => ({
   borderRadius: themeGet('radii.small', '4px')(props),
@@ -435,7 +429,7 @@ Each value in `propTypes` is an object which should be assigned (or spread) to t
 
 ```jsx
 import styled from 'styled-components'
-import { width } from 'styled-system'
+import { width } from 'tmp-styled-system'
 
 const Box = styled.div`
   ${width}
@@ -464,7 +458,7 @@ Each key in the configuration object can define the following:
 ```js
 // example
 import styled from 'styled-components'
-import { system } from 'styled-system'
+import { system } from 'tmp-styled-system'
 
 const Text = styled('div')(
   system({
@@ -493,7 +487,7 @@ Creates a custom style utility to apply complex styles based on a single prop.
 
 ```js
 import styled from 'styled-components'
-import { variant } from 'styled-system'
+import { variant } from 'tmp-styled-system'
 
 const Card = styled.div`
   ${variant({
@@ -508,7 +502,7 @@ const Card = styled.div`
         boxShadow: 'large',
         borderRadius: 4,
       },
-    }
+    },
   })}
 `
 Card.defaultProps = {
@@ -519,10 +513,10 @@ Card.defaultProps = {
 
 ## Legacy Variants
 
-The legacy variants require styles to be defined in the theme object and do *not* use `@styled-system/css` for transformation.
+The legacy variants require styles to be defined in the theme object and do _not_ use `@tmp-styled-system/css` for transformation.
 
 ```js
-import { textStyle, colorStyle, buttonStyle } from 'styled-system'
+import { textStyle, colorStyle, buttonStyle } from 'tmp-styled-system'
 ```
 
 ```jsx

@@ -100,7 +100,7 @@ Try the [examples](examples) on CodeSandbox
 ```jsx
 // Example uses styled-components, but styled-system works with most other css-in-js libraries as well
 import styled from 'styled-components'
-import { space, layout, typography, color } from 'styled-system'
+import { space, layout, typography, color } from 'tmp-styled-system'
 
 // Add styled-system functions to your component
 const Box = styled.div`
@@ -169,7 +169,7 @@ To learn more, see the [Getting Started](https://styled-system.com/getting-start
 - [Reference Table](https://styled-system.com/table)
 - [Packages](https://styled-system.com/packages)
 - [Guides](https://styled-system.com/guides)
-- [@styled-system/css](https://styled-system.com/css)
+- [@tmp-styled-system/css](https://styled-system.com/css)
 
 ---
 

@@ -8,7 +8,7 @@ import {
   width,
   fontWeight,
   lineHeight,
-} from 'styled-system'
+} from 'tmp-styled-system'
 
 const Style = createGlobalStyle`
   * { box-sizing: border-box; }

@@ -14,8 +14,8 @@ import {
   shadow,
   buttonStyle,
   textStyle,
-  colorStyle
-} from 'styled-system'
+  colorStyle,
+} from 'tmp-styled-system'
 
 const all = compose(
   space,

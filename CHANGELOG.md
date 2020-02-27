@@ -6,12 +6,12 @@
 
 ## v5.1.4 2019-12-02
 
-- `@styled-system/css` add `outlineColor` support #825
+- `@tmp-styled-system/css` add `outlineColor` support #825
 - Update dependencies
 
 ## v5.1.3 2019-09-16
 
-- Add `@styled-system/props` utility #824
+- Add `@tmp-styled-system/props` utility #824
 
 ## v5.1.2 2019-09-11
 
@@ -30,12 +30,12 @@
 ## v5.0.23 2019-08-12
 
 - Add support for `overflowX` and `overflowY` #682
-- `@styled-system/css`: add support for `size` #684
+- `@tmp-styled-system/css`: add support for `size` #684
 - Update dependencies
 
 ## v5.0.22 2019-08-09
 
-- `@styled-system/css`: add support for `fill`, `stroke`, and `flexBasis` #679
+- `@tmp-styled-system/css`: add support for `fill`, `stroke`, and `flexBasis` #679
 
 ## v5.0.21 2019-08-07
 
@@ -47,14 +47,14 @@
 
 ## v5.0.19 2019-08-05
 
-- `@styled-system/css` allow functional values to return responsive array values #654
+- `@tmp-styled-system/css` allow functional values to return responsive array values #654
 
 ## v5.0.18 2019-07-31
 
 - Fix for incorrectly ordered `@media` rules when `null` values are used in multiple array-value props #638
 - Fix for incorrectly ordered `@media` rules with responsive object values
 - Added integration tests with Styled Components and Emotion
-- `@styled-system/prop-types` exports `createPropTypes`
+- `@tmp-styled-system/prop-types` exports `createPropTypes`
 
 ## v5.0.17 2019-07-30
 
@@ -63,7 +63,7 @@
 ## v5.0.16 2019-07-22
 
 - Update dependencies
-- `@styled-system/css`: fix for `p` paragraph/padding collision
+- `@tmp-styled-system/css`: fix for `p` paragraph/padding collision
 - Add option to disable breakpoint caching #595
 
 ## v5.0.15 2019-07-15
@@ -76,7 +76,7 @@
 
 ## v5.0.13 2019-07-05
 
-- `@styled-system/css`: add support for `gap`, `rowGap`, and `columnGap` properties #596
+- `@tmp-styled-system/css`: add support for `gap`, `rowGap`, and `columnGap` properties #596
 
 ## v5.0.12 2019-06-25
 
@@ -84,16 +84,16 @@
 
 ## v5.0.11 2019-06-24
 
-- `@styled-system/css`: use `theme.space` in grid properties #574
+- `@tmp-styled-system/css`: use `theme.space` in grid properties #574
 
 ## v5.0.10 2019-06-19
 
-- `@styled-system/css`: use `theme.space` in position properties #568
-- `@styled-system/css`: fix null check #572
+- `@tmp-styled-system/css`: use `theme.space` in position properties #568
+- `@tmp-styled-system/css`: fix null check #572
 
 ## v5.0.9 2019-06-18
 
-- `@styled-system/css`: use theme in `textShadow` property #567
+- `@tmp-styled-system/css`: use theme in `textShadow` property #567
 
 ## v5.0.8 2019-06-12
 
@@ -101,7 +101,7 @@
 
 ## v5.0.7 2019-06-11
 
-- `@styled-system/should-forward-prop`: add missing props #554
+- `@tmp-styled-system/should-forward-prop`: add missing props #554
 - Fix example #548
 
 ## v5.0.6 2019-06-10
@@ -139,14 +139,14 @@
 - Faster (fastest implementation yet)
 - New `system` API for custom style props
 - Built-in style props are now grouped into categories
-- Style functions are now available as separate packages (e.g. `@styled-system/core`, `@styled-system/space`)
-- Removes `propTypes` (use `.propNames` or the optional `@styled-system/prop-types` package instead)
+- Style functions are now available as separate packages (e.g. `@tmp-styled-system/core`, `@tmp-styled-system/space`)
+- Removes `propTypes` (use `.propNames` or the optional `@tmp-styled-system/prop-types` package instead)
 - No longer converts numbers to `px` strings
 - Changes interal `get` utility
 - Removes: `isObject`, `is`, `px`, `num`, `createMediaQuery`, `defaultBreakpoints`, `merge`, `cloneFunction`, `mapProps`
 - No longer returns `null` (returns and empty object instead)
 - No longer converts padding to negative values (not needed)
-- Removes `themeGet` from main package, use `@styled-system/theme-get` instead
+- Removes `themeGet` from main package, use `@tmp-styled-system/theme-get` instead
 - The new `theme.sizes` scale replaces `heights`, `minHeights`, `maxHeights`, `minWidths`, and `maxWidths`; and is used for the `width` prop
 - Style functions now cache `theme.breakpoints`. If you rely on dynamically changing breakpoints in runtime, this is a breaking change
 

@@ -12,7 +12,7 @@ All Styled System functions rely on these low-level utilities.
 
 ```jsx
 import styled from 'styled-components'
-import { system } from 'styled-system'
+import { system } from 'tmp-styled-system'
 
 const textDecoration = system({
   prop: 'textDecoration',
@@ -71,7 +71,7 @@ To create aliases for props with the `system` function, add a key for the aliase
 
 ```js
 // example alias
-import { system } from 'styled-system'
+import { system } from 'tmp-styled-system'
 
 const config = {
   color: {
@@ -95,13 +95,7 @@ To combine multiple Styled System functions in a single component, use the `comp
 
 ```js
 import styled from 'styled-components'
-import { space, layout, color, compose } from 'styled-system'
+import { space, layout, color, compose } from 'tmp-styled-system'
 
-const Box = styled('div')(
-  compose(
-    space,
-    layout,
-    color
-  )
-)
+const Box = styled('div')(compose(space, layout, color))
 ```

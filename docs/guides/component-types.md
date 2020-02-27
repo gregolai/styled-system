@@ -14,15 +14,16 @@ To group these shared Styled System props together, create a new module that wil
 
 ```js
 // custom styled-system groupings
-import { compose, space, color, display, width, maxWidth } from 'styled-system'
-
-export const layout = compose(
+import {
+  compose,
   space,
+  color,
   display,
   width,
   maxWidth,
-  color
-)
+} from 'tmp-styled-system'
+
+export const layout = compose(space, display, width, maxWidth, color)
 ```
 
 To add these props to a component, import the composed `layout` function and pass it to the `styled` function.

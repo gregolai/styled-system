@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@styled-system/docs",
+  "name": "@tmp-styled-system/docs",
   "version": "5.0.0-8",
   "scripts": {
     "start": "gatsby develop",
@@ -13,10 +13,10 @@
     "@emotion/styled": "^10.0.11",
     "@mdx-js/mdx": "^1.0.19",
     "@mdx-js/react": "^1.0.16",
-    "@styled-system/babel-plugin": "0.0.20",
-    "@styled-system/css": "^5.0.16",
-    "@styled-system/edit": "^5.0.15",
-    "@styled-system/should-forward-prop": "^5.0.15",
+    "@tmp-styled-system/babel-plugin": "0.0.20",
+    "@tmp-styled-system/css": "^5.0.16",
+    "@tmp-styled-system/edit": "^5.0.15",
+    "@tmp-styled-system/should-forward-prop": "^5.0.15",
     "@theme-ui/sidenav": "^0.2.33",
     "gatsby": "^2.4.6",
     "gatsby-plugin-emotion": "^4.0.6",
@@ -36,7 +36,7 @@
     "reflexbox": "^4.0.2",
     "remark-slug": "^5.1.1",
     "remark-unwrap-images": "^1.0.0",
-    "styled-system": "^5.0.0-8",
+    "tmp-styled-system": "^5.0.0-8",
     "theme-ui": "^0.2.16",
     "typography-theme-lincoln": "^0.16.19"
   },

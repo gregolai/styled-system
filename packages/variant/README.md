@@ -1,5 +1,4 @@
-
-# @styled-system/variant
+# @tmp-styled-system/variant
 
 Read the docs: https://styled-system.com/variants
 
@@ -7,7 +6,7 @@ Read the docs: https://styled-system.com/variants
 
 ```js
 import styled from 'styled-components'
-import variant from '@styled-system/variant'
+import variant from '@tmp-styled-system/variant'
 
 const Button = styled('button')(
   variant({
@@ -17,16 +16,16 @@ const Button = styled('button')(
         bg: 'primary',
         ':hover': {
           bg: 'black',
-        }
+        },
       },
       secondary: {
         color: 'white',
         bg: 'secondary',
         ':hover': {
           bg: 'black',
-        }
+        },
       },
-    }
+    },
   })
 )
 

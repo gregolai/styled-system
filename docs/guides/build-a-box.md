@@ -37,7 +37,7 @@ For styles that don't change frequently, it's generally better to [extend the co
 ```js
 // example Box.js
 import styled from 'styled-components'
-import { space, color, layout } from 'styled-system'
+import { space, color, layout } from 'tmp-styled-system'
 
 const Box = styled.div(
   {
@@ -69,7 +69,7 @@ Add the following props to the Box.
 ```js
 // example Box.js
 import styled from 'styled-components'
-import { space, color, layout, flexbox } from 'styled-system'
+import { space, color, layout, flexbox } from 'tmp-styled-system'
 
 const Box = styled.div(
   {

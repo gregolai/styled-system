@@ -2,7 +2,7 @@
 import { jsx, Global, ThemeContext } from '@emotion/core'
 import React from 'react'
 import { render } from 'react-dom'
-import css from '@styled-system/css'
+import css from '@tmp-styled-system/css'
 
 const theme = {
   fonts: {
@@ -30,10 +30,10 @@ const theme = {
     primary: '#07c',
     secondard: '#05a',
     highlight: '#e10',
-  }
+  },
 }
 
-const Root = props =>
+const Root = props => (
   <div
     {...props}
     css={css({
@@ -42,16 +42,19 @@ const Root = props =>
       p: 3,
     })}
   />
+)
 
-const Heading = props =>
-  <h1 {...props}
+const Heading = props => (
+  <h1
+    {...props}
     css={css({
       fontFamily: 'heading',
       lineHeight: 'heading',
-      fontSize: [ 4, 5 ],
+      fontSize: [4, 5],
       m: 0,
     })}
   />
+)
 
 export const App = props => {
   return (
@@ -65,16 +68,14 @@ export const App = props => {
             },
           }}
         />
-        <Heading>
-            @styled-system/css
-          example
-        </Heading>
+        <Heading>@tmp-styled-system/css example</Heading>
         <pre
           css={css({
             fontFamily: 'monospace',
-            color: 'primary'
-          })}>
-          npm i @styled-system/css
+            color: 'primary',
+          })}
+        >
+          npm i @tmp-styled-system/css
         </pre>
       </Root>
     </ThemeContext.Provider>

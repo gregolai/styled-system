@@ -1,13 +1,13 @@
-import { createStyleFunction, createParser } from '@styled-system/core'
+import { createStyleFunction, createParser } from '@tmp-styled-system/core'
 // v4 api shims
-import layout from '@styled-system/layout'
-import color from '@styled-system/color'
-import typography from '@styled-system/typography'
-import flexbox from '@styled-system/flexbox'
-import grid from '@styled-system/grid'
-import border from '@styled-system/border'
-import background from '@styled-system/background'
-import position from '@styled-system/position'
+import layout from '@tmp-styled-system/layout'
+import color from '@tmp-styled-system/color'
+import typography from '@tmp-styled-system/typography'
+import flexbox from '@tmp-styled-system/flexbox'
+import grid from '@tmp-styled-system/grid'
+import border from '@tmp-styled-system/border'
+import background from '@tmp-styled-system/background'
+import position from '@tmp-styled-system/position'
 
 export {
   get,
@@ -15,26 +15,29 @@ export {
   createStyleFunction,
   compose,
   system,
-} from '@styled-system/core'
+} from '@tmp-styled-system/core'
 
-export { margin, padding, space } from '@styled-system/space'
-export { color } from '@styled-system/color'
-export { layout } from '@styled-system/layout'
-export { typography } from '@styled-system/typography'
-export { flexbox } from '@styled-system/flexbox'
-export { border } from '@styled-system/border'
-export { background } from '@styled-system/background'
-export { position } from '@styled-system/position'
-export { grid } from '@styled-system/grid'
-export { shadow } from '@styled-system/shadow'
-export { default as boxShadow, default as textShadow } from '@styled-system/shadow'
+export { margin, padding, space } from '@tmp-styled-system/space'
+export { color } from '@tmp-styled-system/color'
+export { layout } from '@tmp-styled-system/layout'
+export { typography } from '@tmp-styled-system/typography'
+export { flexbox } from '@tmp-styled-system/flexbox'
+export { border } from '@tmp-styled-system/border'
+export { background } from '@tmp-styled-system/background'
+export { position } from '@tmp-styled-system/position'
+export { grid } from '@tmp-styled-system/grid'
+export { shadow } from '@tmp-styled-system/shadow'
+export {
+  default as boxShadow,
+  default as textShadow,
+} from '@tmp-styled-system/shadow'
 
 export {
   variant,
   buttonStyle,
   textStyle,
-  colorStyle
-} from '@styled-system/variant'
+  colorStyle,
+} from '@tmp-styled-system/variant'
 
 const {
   width,
@@ -48,7 +51,7 @@ const {
   display,
   overflow,
   overflowX,
-  overflowY
+  overflowY,
 } = layout
 const { opacity } = color
 const {
@@ -106,15 +109,9 @@ const {
   backgroundPosition,
   backgroundRepeat,
 } = background
-const {
-  zIndex,
-  top,
-  right,
-  bottom,
-  left,
-} = position
+const { zIndex, top, right, bottom, left } = position
 
-export { default as borders } from '@styled-system/border'
+export { default as borders } from '@tmp-styled-system/border'
 export {
   width,
   height,

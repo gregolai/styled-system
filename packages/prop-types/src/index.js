@@ -12,8 +12,8 @@ import {
   shadow,
   buttonStyle,
   textStyle,
-  colorStyle
-} from 'styled-system'
+  colorStyle,
+} from 'tmp-styled-system'
 
 export const propType = PropTypes.oneOfType([
   PropTypes.number,
@@ -23,10 +23,13 @@ export const propType = PropTypes.oneOfType([
 ])
 
 export const createPropTypes = props => {
-  return props.reduce((acc, name) => ({
-  ...acc,
-  [name]: propType,
-}), {})
+  return props.reduce(
+    (acc, name) => ({
+      ...acc,
+      [name]: propType,
+    }),
+    {}
+  )
 }
 
 export default {

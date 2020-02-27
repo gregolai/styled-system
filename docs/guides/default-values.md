@@ -10,7 +10,7 @@ To add a default value for any Styled System prop, use `defaultProps` on your co
 ```js
 // example
 import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { space, color } from 'tmp-styled-system'
 
 const Card = styled.div(
   {

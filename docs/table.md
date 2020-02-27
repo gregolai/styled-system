@@ -6,12 +6,9 @@ Each function provides the following props and maps to scales defined in a theme
 ## Space
 
 ```js
-import { space } from 'styled-system'
-// or `import space from '@styled-system/space'`
-
-<Box m={2}>
-  Tomato
-</Box>
+import { space } from 'tmp-styled-system'
+// or `import space from '@tmp-styled-system/space'`
+;<Box m={2}>Tomato</Box>
 ```
 
 | Prop                  | CSS Property                       | Theme Field |
@@ -36,10 +33,9 @@ Styled System provides subsets of `space` category: `margin` and `padding`.
 ## Color
 
 ```js
-import { color } from 'styled-system'
-// or `import color from '@styled-system/color'`
-
-<Text color="white" bg="black">
+import { color } from 'tmp-styled-system'
+// or `import color from '@tmp-styled-system/color'`
+;<Text color="white" bg="black">
   Header
 </Text>
 ```
@@ -53,10 +49,9 @@ import { color } from 'styled-system'
 ## Typography
 
 ```js
-import { typography } from 'styled-system'
-// or `import typography from '@styled-system/typography'`
-
-<Header fontFamily="Helvetica" fontSize={2}>
+import { typography } from 'tmp-styled-system'
+// or `import typography from '@tmp-styled-system/typography'`
+;<Header fontFamily="Helvetica" fontSize={2}>
   Hello!
 </Header>
 ```
@@ -74,10 +69,9 @@ import { typography } from 'styled-system'
 ## Layout
 
 ```js
-import { layout } from 'styled-system'
-// or `import layout from '@styled-system/layout'`
-
-<Box width="100%" height={32} overflow="hidden" />
+import { layout } from 'tmp-styled-system'
+// or `import layout from '@tmp-styled-system/layout'`
+;<Box width="100%" height={32} overflow="hidden" />
 ```
 
 | Prop            | CSS Property     | Theme Field |
@@ -98,10 +92,9 @@ import { layout } from 'styled-system'
 ## Flexbox
 
 ```js
-import { flexbox } from 'styled-system'
-// or `import flexbox from '@styled-system/flexbox'`
-
-<Flex alignItems="center" justifyContent="space-between">
+import { flexbox } from 'tmp-styled-system'
+// or `import flexbox from '@tmp-styled-system/flexbox'`
+;<Flex alignItems="center" justifyContent="space-between">
   Blog
 </Flex>
 ```
@@ -125,10 +118,9 @@ import { flexbox } from 'styled-system'
 ## Grid Layout
 
 ```js
-import { grid } from 'styled-system'
-// or `import grid from '@styled-system/grid'`
-
-<Grid gridGap={2} gridAutoFlow="row dense">
+import { grid } from 'tmp-styled-system'
+// or `import grid from '@tmp-styled-system/grid'`
+;<Grid gridGap={2} gridAutoFlow="row dense">
   Grid
 </Grid>
 ```
@@ -151,10 +143,9 @@ import { grid } from 'styled-system'
 ## Background
 
 ```js
-import { background } from 'styled-system'
-// or `import background from '@styled-system/background'`
-
-<Image
+import { background } from 'tmp-styled-system'
+// or `import background from '@tmp-styled-system/background'`
+;<Image
   backgroundImage="url('/images/dog.png')"
   backgroundPosition="center"
   backgroundRepeat="no-repeat"
@@ -172,10 +163,9 @@ import { background } from 'styled-system'
 ## Border
 
 ```js
-import { border } from 'styled-system'
-// or `import border from '@styled-system/border'`
-
-<Box border={1} borderRadius={2}>
+import { border } from 'tmp-styled-system'
+// or `import border from '@tmp-styled-system/border'`
+;<Box border={1} borderRadius={2}>
   Card
 </Box>
 ```
@@ -213,10 +203,9 @@ import { border } from 'styled-system'
 ## Position
 
 ```js
-import { position } from 'styled-system'
-// or `import position from '@styled-system/position'`
-
-<Box position="absolute" top={0} left={0} right={0} bottom={0}>
+import { position } from 'tmp-styled-system'
+// or `import position from '@tmp-styled-system/position'`
+;<Box position="absolute" top={0} left={0} right={0} bottom={0}>
   Cover
 </Box>
 ```
@@ -233,10 +222,9 @@ import { position } from 'styled-system'
 ## Shadow
 
 ```js
-import { shadow } from 'styled-system'
-// or `import shadow from '@styled-system/shadow'`
-
-<Text textShadow="2px 2px #ff0000" boxShadow="5px 10px #888888">
+import { shadow } from 'tmp-styled-system'
+// or `import shadow from '@tmp-styled-system/shadow'`
+;<Text textShadow="2px 2px #ff0000" boxShadow="5px 10px #888888">
   Text with shadows
 </Text>
 ```
@@ -251,8 +239,8 @@ import { shadow } from 'styled-system'
 **Note**: The prefered API for [variants](/variants) has changed. The following is a reference for legacy variant APIs.
 
 ```js
-import { textStyle, colorStyle, buttonStyle } from 'styled-system'
-// or `import { textStyle, colorStyle, buttonStyle } from '@styled-system/variant'`
+import { textStyle, colorStyle, buttonStyle } from 'tmp-styled-system'
+// or `import { textStyle, colorStyle, buttonStyle } from '@tmp-styled-system/variant'`
 
 <Button variant="primary">Primary</Button>
 <Button variant="secondary">Secondary</Button>

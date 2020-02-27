@@ -2,7 +2,7 @@
 import { jsx, css, useColorMode } from 'theme-ui'
 import React from 'react'
 import styled from '@emotion/styled'
-import { flexDirection } from 'styled-system'
+import { flexDirection } from 'tmp-styled-system'
 import { useAppContext } from './index'
 import NavLink from './nav-link'
 import Burger from './burger'
@@ -60,7 +60,7 @@ export const Header = ({ sidebar = true, ...props }) => {
         >
           Styled System
         </NavLink>
-        <div sx={{ mx: "auto" }} />
+        <div sx={{ mx: 'auto' }} />
         <button
           title="Toggle Color Mode"
           css={css({
@@ -170,7 +170,8 @@ export default ({ banner, ...props }) => {
         <Container
           css={{
             maxWidth: 896,
-          }}>
+          }}
+        >
           {props.children}
           <EditLink />
           <Pagination />

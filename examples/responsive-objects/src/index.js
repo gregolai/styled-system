@@ -10,18 +10,19 @@ import {
   width,
   fontWeight,
   lineHeight,
-} from 'styled-system'
+} from 'tmp-styled-system'
 
-const Style = () =>
+const Style = () => (
   <Global
     styles={{
       '*': { boxSizing: 'border-box' },
-      body: { margin: 0 }
+      body: { margin: 0 },
     }}
   />
+)
 
 const theme = {
-  breakpoints: [ '40em', '52em', '64em' ],
+  breakpoints: ['40em', '52em', '64em'],
   fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],
   space: [
     // margin and padding
@@ -48,29 +49,13 @@ const Root = styled('div')({
   lineHeight: 1.5,
 })
 
-const Box = styled('div')(
-  space,
-  width,
-  fontSize,
-  color
-)
+const Box = styled('div')(space, width, fontSize, color)
 
-const Text = styled('div')(
-  space,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  color
-)
+const Text = styled('div')(space, fontSize, fontWeight, lineHeight, color)
 
-const Heading = props =>
-  <Text
-    as='h2'
-    fontSize={5}
-    lineHeight='1.25'
-    m={0}
-    {...props}
-  />
+const Heading = props => (
+  <Text as="h2" fontSize={5} lineHeight="1.25" m={0} {...props} />
+)
 
 class App extends React.Component {
   render() {
@@ -79,12 +64,12 @@ class App extends React.Component {
         <Root>
           <Style />
           <Box
-            px={{ _: 3, medium: 4}}
+            px={{ _: 3, medium: 4 }}
             py={{ _: 5, medium: 6 }}
             color="white"
-            bg="blue">
-            <Heading
-              fontSize={{ _: 4, small: 5, medium: 6 }}>
+            bg="blue"
+          >
+            <Heading fontSize={{ _: 4, small: 5, medium: 6 }}>
               Styled System
             </Heading>
             <Text fontWeight="bold">Responsive objects example</Text>

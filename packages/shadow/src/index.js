@@ -1,4 +1,4 @@
-import { system } from '@styled-system/core'
+import { system } from '@tmp-styled-system/core'
 
 export const shadow = system({
   boxShadow: {

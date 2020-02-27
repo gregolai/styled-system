@@ -20,7 +20,7 @@ To start with, add the `color` function to the component's styles argument.
 
 ```javascript
 import styled from 'styled-components'
-import { color } from 'styled-system'
+import { color } from 'tmp-styled-system'
 
 const Box = styled.div`
   ${color}
@@ -92,7 +92,7 @@ to handle layout styles.
 
 ```jsx
 import styled from 'styled-components'
-import { space, layout, color } from 'styled-system'
+import { space, layout, color } from 'tmp-styled-system'
 
 const Box = styled.div`
   ${space}

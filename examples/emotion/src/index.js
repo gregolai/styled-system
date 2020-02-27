@@ -10,7 +10,7 @@ import {
   width,
   fontWeight,
   lineHeight,
-} from 'styled-system'
+} from 'tmp-styled-system'
 
 const theme = {
   fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],

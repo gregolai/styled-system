@@ -1,15 +1,15 @@
 {
-  "name": "@styled-system/prop-types",
+  "name": "@tmp-styled-system/prop-types",
   "version": "5.1.4",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "author": "Brent Jackson",
   "license": "MIT",
   "peerDependencies": {
-    "styled-system": "^5.0.0-8"
+    "tmp-styled-system": "^5.0.0-8"
   },
   "devDependencies": {
-    "styled-system": "^5.1.4"
+    "tmp-styled-system": "^5.1.4"
   },
   "dependencies": {
     "prop-types": "^15.7.2"

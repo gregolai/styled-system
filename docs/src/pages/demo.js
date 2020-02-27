@@ -1,5 +1,9 @@
 import React, { useContext } from 'react'
-import { EditProvider, EditContext, ThemeControls } from '@styled-system/edit'
+import {
+  EditProvider,
+  EditContext,
+  ThemeControls,
+} from '@tmp-styled-system/edit'
 import { Global } from '@emotion/core'
 import { css, ThemeProvider, Styled } from 'theme-ui'
 import GettingStarted from '../../getting-started.md'

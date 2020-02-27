@@ -6,10 +6,10 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "@styled-system/css": "^5.0.13",
+    "@tmp-styled-system/css": "^5.0.13",
     "@xstyled/system": "^1.0.0",
     "benchmark": "^2.1.4",
-    "styled-system": "^5.0.1",
+    "tmp-styled-system": "^5.0.1",
     "system-v4": "npm:styled-system@4.2.2"
   }
 }

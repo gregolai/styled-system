@@ -1,5 +1,4 @@
-
-# @styled-system/theme-get
+# @tmp-styled-system/theme-get
 
 The `themeGet` function is an existential getter function
 that can be used in any style declaration to get a value
@@ -8,7 +7,7 @@ This helps prevent errors from throwing when a theme value is missing,
 which can be helpful when unit testing styled-components.
 
 ```sh
-npm i @styled-system/theme-get
+npm i @tmp-styled-system/theme-get
 ```
 
 ```js
@@ -21,7 +20,7 @@ literal should look like this:
 
 ```js
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from '@tmp-styled-system/theme-get'
 
 const Box = styled.div`
   border-radius: ${themeGet('radii.small', '4px')};
@@ -33,7 +32,7 @@ function call and have `props` passed to it:
 
 ```js
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from '@tmp-styled-system/theme-get'
 
 const Box = styled('div')(props => ({
   borderRadius: themeGet('radii.small', '4px')(props),

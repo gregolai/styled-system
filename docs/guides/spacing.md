@@ -34,7 +34,7 @@ for this purpose.
 ```js
 // example Spacer component
 import styled from 'styled-components'
-import { space } from 'styled-system'
+import { space } from 'tmp-styled-system'
 
 const Spacer = styled.div(space)
 ```
@@ -71,7 +71,7 @@ The use of child CSS selectors can lead to styling bugs and isn't generally reco
 ```js
 // example using child CSS selectors
 import styled from 'styled-components'
-import { space } from 'styled-system'
+import { space } from 'tmp-styled-system'
 
 const SpaceChildren = styled.div`
   & > * {
@@ -86,7 +86,7 @@ This approach does not create a wrapping element and does not rely on child CSS 
 ```jsx
 import React from 'react'
 import styled from 'styled-components'
-import { space } from 'styled-system'
+import { space } from 'tmp-styled-system'
 
 const classnames = (...args) => args.join(' ')
 const getClassName = el => (el.props && el.props.className) || ''
@@ -119,7 +119,7 @@ The `space` utility can be added to any component that accepts the `className` p
 ```js
 // example
 import styled from 'styled-component'
-import { space } from 'styled-system'
+import { space } from 'tmp-styled-system'
 
 const Heading = styled.h2(space)
 ```
@@ -135,16 +135,16 @@ When using the component, you can adjust margin and padding in any direction nee
 
 [rebass space]: https://github.com/rebassjs/space
 
-While the `space` utility is a perfect choice for most cases, it can be useful to add only margin or padding props to 
+While the `space` utility is a perfect choice for most cases, it can be useful to add only margin or padding props to
 a component. To handle those cases, Styled System provides subsets of the `space` utility: `padding` and `margin` utilities.
 
-The `padding` utility adds only padding props to a component and the `margin` utility adds only margin props. Usage of 
+The `padding` utility adds only padding props to a component and the `margin` utility adds only margin props. Usage of
 the utilities are the same as the usage of `space` utility
 
 ```js
 // margin utility example
 import styled from 'styled-component'
-import { margin } from 'styled-system'
+import { margin } from 'tmp-styled-system'
 
 const Paragraph = styled.p(margin)
 ```
