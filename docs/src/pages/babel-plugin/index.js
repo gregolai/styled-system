@@ -1,5 +1,5 @@
 import React from 'react'
-import Readme from '@tmp-styled-system/babel-plugin/README.md'
+import Readme from '@styled-system/babel-plugin/README.md'
 import Layout from '../../layout'
 
 export default props => {
