@@ -1,6 +1,6 @@
 {
   "name": "@tmp-styled-system/prop-types",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "author": "Brent Jackson",
@@ -9,7 +9,7 @@
     "tmp-styled-system": "^5.0.0-8"
   },
   "devDependencies": {
-    "tmp-styled-system": "^6.0.1"
+    "tmp-styled-system": "^6.0.2"
   },
   "dependencies": {
     "prop-types": "^15.7.2"

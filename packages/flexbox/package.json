@@ -1,12 +1,12 @@
 {
   "name": "@tmp-styled-system/flexbox",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "@tmp-styled-system/core": "^6.0.1"
+    "@tmp-styled-system/core": "^6.0.2"
   },
   "publishConfig": {
     "access": "public"
