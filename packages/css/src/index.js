@@ -201,8 +201,8 @@ export const responsive = styles => theme => {
         let isBreakpointObj = false
 
         for (let bpkey in value) {
-          // MATCH WILDCARD
-          if (bpkey.endsWith('*')) {
+          // MATCH WILDCARD - bpkey.endsWith('*')
+          if (bpkey[bpkey.length - 1] === '*') {
             // e.g. "tablet-*" becomes "tablet-"
             const subbpkey = bpkey.substr(0, bpkey.length - 1)
 

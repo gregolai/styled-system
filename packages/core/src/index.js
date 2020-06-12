@@ -134,8 +134,8 @@ const parseResponsiveObject = (breakpoints, sx, scale, raw, _props) => {
     const value = raw[key]
     const style = sx(value, scale, _props)
 
-    // MATCH WILDCARD
-    if (key.endsWith('*')) {
+    // MATCH WILDCARD - key.endsWith('*')
+    if (key[key.length - 1] === '*') {
       // e.g. "tablet-*" becomes "tablet-"
       const subbpkey = key.substr(0, key.length - 1)
 
